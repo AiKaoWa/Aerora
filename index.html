@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video id="background-video" autoplay muted loop></video>
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" id="location-input" placeholder="Enter Your Location">
+            <button id="search-button" class='bx bx-search'></button>
+        </div>
+        <div id="weather-info" class="weather-info">
+            <h2 id="location-name">
+                <img id="location-image" alt="Location Image" class="weather-image">
+                <i class='bx bx-location-plus icon'></i>
+            </h2>
+            <div class="temperature-container">
+                <img id="temperature-image" alt="Temperature Image" class="weather-image">
+                <p id="temperature">
+                    <span id="temp-value"></span>
+                    <i class='bx bx-thermometer icon'></i>
+                </p>
+            </div>
+            <p id="weather">
+                <i class='bx bx-cloud-sun icon'></i>
+            </p>
+            <p id="humidity">
+                Humidity
+                <i class='bx bx-tint icon'></i>
+            </p>
+            <p id="wind-speed">
+                Wind Speed
+                <i class='bx bx-wind icon'></i>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
